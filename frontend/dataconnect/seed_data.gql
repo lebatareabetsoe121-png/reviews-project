@@ -1,0 +1,88 @@
+mutation CreateSeedData @transaction @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public") {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      displayName: "demouser1",
+      email: "demouser1@example.com",
+      createdAt: "2024-04-26T12:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      displayName: "demouser2",
+      email: "demouser2@example.com",
+      createdAt: "2024-04-26T13:00:00Z"
+    }
+  ])
+  product_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440002",
+      name: "Example Product 1",
+      description: "This is an example product",
+      price: 19.99,
+      createdAt: "2024-04-26T14:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440003",
+      name: "Example Product 2",
+      description: "This is another example product",
+      price: 29.99,
+      createdAt: "2024-04-26T15:00:00Z"
+    }
+  ])
+  cart_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440004",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      createdAt: "2024-04-26T16:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440005",
+      userId: "550e8400-e29b-41d4-a716-446655440001",
+      createdAt: "2024-04-26T17:00:00Z"
+    }
+  ])
+  cartItem_insertMany(data: [
+    {
+      cartId: "550e8400-e29b-41d4-a716-446655440004",
+      productId: "550e8400-e29b-41d4-a716-446655440002",
+      addedAt: "2024-04-26T18:00:00Z",
+      quantity: 1
+    },
+    {
+      cartId: "550e8400-e29b-41d4-a716-446655440005",
+      productId: "550e8400-e29b-41d4-a716-446655440003",
+      addedAt: "2024-04-26T19:00:00Z",
+      quantity: 2
+    }
+  ])
+  order_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440006",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      orderDate: "2024-04-26T20:00:00Z",
+      status: "PENDING",
+      totalAmount: 19.99
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440007",
+      userId: "550e8400-e29b-41d4-a716-446655440001",
+      orderDate: "2024-04-26T21:00:00Z",
+      status: "SHIPPED",
+      totalAmount: 59.98
+    }
+  ])
+  orderItem_insertMany(data: [
+    {
+      orderId: "550e8400-e29b-41d4-a716-446655440006",
+      productId: "550e8400-e29b-41d4-a716-446655440002",
+      priceAtPurchase: 19.99,
+      quantity: 1
+    },
+    {
+      orderId: "550e8400-e29b-41d4-a716-446655440007",
+      productId: "550e8400-e29b-41d4-a716-446655440003",
+      priceAtPurchase: 29.99,
+      quantity: 2
+    }
+  ])
+}

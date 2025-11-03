@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "Wimpy",
+    "location": "Masianokeng Compex, Maseru",
+    "image": "https://wimpy.uk.com/img/uploads/Y6Gp5IOfxCDoHFWiTBXU9dwFE0asPeWLTC5qNp02.jpeg?w=960&h=600&fit=contain",
+    "description": "A cozy spot for breakfast and burgers."
+  },
+
+  {
+    "id": "2",
+    "name": "Stadium Food Court",
+    "location": "Cathedral Area, Maseru",
+    "image": "https://newweb.stadiumfastfoods.com/assets/img/stores/botshabelo/botshabelo(2).jpg",
+    "description": "Your go-to spot for gourmet burgers."
+  },
+
+   {
+    "id": "3",
+    "name": "Spur Steak Ranch",
+    "location": "Maseru Mall, Maseru",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9",
+    "description": "Family-friendly restaurant serving steak and ribs."
+  },
+
+  {
+    "id": "4",
+    "name": "Dominoes Pizza",
+    "location": "Kingsway, Maseru",
+    "image": "https://interior-design.green/wp-content/uploads/2019/09/pizzeria-interior-design-14.jpg",
+    "description": "Authentic Italian pizzas with a modern twist."
+  },
+
+  {
+    "id": "5",
+    "name": "The Green Bowl",
+    "location": "Market Street, Maseru",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.377fJb27c9Hkf1FzyZvAQwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "Healthy salads, smoothies, and plant-based meals."
+  },
+
+  {
+    "id": "6",
+    "name": "Ocean Basket",
+    "location": "Hills view, Maseru",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+    "description": "Seafood restaurant serving fresh fish and sushi."
+  },
+
+  {
+    "id": "7",
+    "name": "Jays",
+    "location": "Downtown, Maseru",
+    "image": "https://th.bing.com/th/id/R.fe4c17892b41796a20c22304b7bdb74d?rik=iz%2fAo%2ftLTQnwOQ&pid=ImgRaw&r=0",
+    "description": "Hangout spot for deluxe burgers and steak meals."
+  },
+  
+   {
+    "id": "8",
+    "name": "Capsy's",
+    "location": "Chinese Embassy, Maseru",
+    "image": "https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1311325.jpg",
+    "description": "Family-friendly resturant serving premium platters"
+  }
+]
